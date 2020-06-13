@@ -1,0 +1,3 @@
+#/bin/bash
+
+c++ -O3 -Wall -shared -fPIC -std=c++11 -u dynamic_lookup `python3 -m pybind11 --includes` *.cc -o ex10`python3-config --extension-suffix`
